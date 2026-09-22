@@ -1,0 +1,58 @@
+{
+    "firstData":{
+        "name":"Anitha",
+        "email":"anithas9095@gmail.com",
+        "phone":"1234567890",
+        "address":"Visakhapatnam",
+        "gender":"male",
+        "days":["monday","tuesday","saturday"],
+        "country":"Canada",
+        "color":"White",
+        "filePath":"C:\\Users\\sanju\\OneDrive\\Desktop\\PlayWright_Blogspot\\Files\\Java Script interview questions.docx",
+        "filePath1":"C:\\Users\\sanju\\OneDrive\\Desktop\\PlayWright_Blogspot\\Files\\Java Script interview questions.docx",
+        "filePath2":"C:\\Users\\sanju\\OneDrive\\Desktop\\PlayWright_Blogspot\\Files\\Anitha_Sunkari_QA_Automation_Tester.docx"
+    },
+    "StaticTableData":{
+        "tableHeaders":["BookName","Author","Subject","Price"],
+        "tableRowData":[
+        {
+            "BookName": "Learn Selenium",
+            "Author": "Amit",
+            "Subject": "Selenium",
+            "Price": "300"
+        },
+        {
+            "BookName": "Learn Java",
+            "Author": "Mukesh",
+            "Subject": "Java",
+            "Price": "500"
+        },
+        {
+            "BookName": "Learn JS",
+            "Author": "Animesh",
+            "Subject": "Javascript",
+            "Price": "300"
+        },
+        {
+            "BookName": "Master In Selenium",
+            "Author": "Mukesh",
+            "Subject": "Selenium",
+            "Price": "3000"
+        },
+        {
+            "BookName": "Master In Java",
+            "Author": "Amod",
+            "Subject": "JAVA",
+            "Price": "2000"
+        },
+        {
+            "BookName": "Master In JS",
+            "Author": "Amit",
+            "Subject": "Javascript",
+            "Price": "1000"
+        }
+    ]
+
+   }
+
+}
