@@ -11,7 +11,6 @@ test.describe('Test group', () => {
   // Create a new page inside context.
   const page = await context.newPage()
   await page.goto('https://example.com');
-  await page.pause();
   await browser.close();
   });
 });

@@ -16,7 +16,6 @@ test.describe('BlogSpot', () => {
         const blogSpotPage = new BlogSpotPage(page);
         await blogSpotPage.enterDetails(data.firstData);
         await blogSpotPage.staticTableValidation(data.StaticTableData.tableHeaders, data.StaticTableData.tableRowData);
-        // await page.pause();
     })
 
 });
