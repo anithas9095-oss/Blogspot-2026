@@ -9,7 +9,7 @@ test.describe('BlogSpot', () => {
     });
 
     test('validate title', async ({ page }) => {         
-            await expect(page).toHaveTitle('Automation Testing Practice');
+        await expect(page).toHaveTitle('Automation Testing Practice');
     });
     
     test('fill the form', async ({ page }) => {

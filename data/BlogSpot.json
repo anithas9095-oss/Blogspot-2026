@@ -8,9 +8,9 @@
         "days":["monday","tuesday","saturday"],
         "country":"Canada",
         "color":"White",
-        "filePath":"C:\\Users\\sanju\\OneDrive\\Desktop\\PlayWright_Blogspot\\Files\\Java Script interview questions.docx",
-        "filePath1":"C:\\Users\\sanju\\OneDrive\\Desktop\\PlayWright_Blogspot\\Files\\Java Script interview questions.docx",
-        "filePath2":"C:\\Users\\sanju\\OneDrive\\Desktop\\PlayWright_Blogspot\\Files\\Anitha_Sunkari_QA_Automation_Tester.docx"
+        "fileName":"Java Script interview questions.docx",
+        "fileName1":"Java Script interview questions.docx",
+        "fileName2":"Anitha_Sunkari_QA_Automation_Tester.docx"
     },
     "StaticTableData":{
         "tableHeaders":["BookName","Author","Subject","Price"],

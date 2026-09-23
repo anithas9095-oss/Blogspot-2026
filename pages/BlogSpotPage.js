@@ -1,4 +1,7 @@
 const { expect } = require('@playwright/test');
+const path = require('path');
+const filePath = path.resolve(__dirname, '../Files');
+
 class BlogSpotPage{
 
     constructor(page){
@@ -35,12 +38,15 @@ class BlogSpotPage{
         await this.page.locator('select#colors').selectOption({ label: color });
     }
 
-    async uploadSingleFile(filePath){
-        await this.page.setInputFiles('#singleFileInput', filePath);
+    async uploadSingleFile(fileName){
+        console.log("File Path: "+path.join(filePath, fileName));
+        await this.page.setInputFiles('#singleFileInput', path.join(filePath, fileName));
     }   
 
-    async uploadMultipleFiles(filePath1, filePath2){
-        await this.page.setInputFiles('#multipleFilesInput', [filePath1, filePath2]);
+    async uploadMultipleFiles(fileName1, fileName2){
+        console.log("File Path 1: "+path.join(filePath, fileName1));
+        console.log("File Path 2: "+path.join(filePath, fileName2));
+        await this.page.setInputFiles('#multipleFilesInput', [path.join(filePath, fileName1), path.join(filePath, fileName2)]);
     }
 
     async enterDetails(data){
@@ -56,9 +62,9 @@ class BlogSpotPage{
         expect(await this.page.locator('select#country').inputValue()).toBe(data.country.toLowerCase());
         await this.selectColor(data.color);
         await expect(await this.page.locator('select#colors').inputValue()).toBe(data.color.toLowerCase());
-        await this.uploadSingleFile(data.filePath);
-        await this.uploadMultipleFiles(data.filePath1, data.filePath2);
-        await this.shadowDomValidation(data.filePath);
+        await this.uploadSingleFile(data.fileName);
+        await this.uploadMultipleFiles(data.fileName1, data.fileName2);
+        await this.shadowDomValidation(data.fileName);
     }
 
     async staticTableValidation(header,data){
@@ -106,8 +112,8 @@ class BlogSpotPage{
         }
     }
 
-    async shadowDomValidation(filepath){
-        await this.page.locator("input[type='file'] ").last().setInputFiles(filepath);
+    async shadowDomValidation(fileName){
+        await this.page.locator("input[type='file'] ").last().setInputFiles(path.join(filePath, fileName));
     }
     
 
